@@ -4,7 +4,7 @@ import axios from "axios";
 import {WeatherContainer, Temp, City} from './WeatherStyles'
 
 const url =
-  "https://api.openweathermap.org/data/2.5/weather?q=dallas&units=imperial&appid=3d8e3cfc5eb2a37147008ffd6117c53e";
+  `https://api.openweathermap.org/data/2.5/weather?q=dallas&units=imperial&appid=${process.env.API_KEY}`;
 
 const Weather = () => {
   const [data, setData] = useState(null);

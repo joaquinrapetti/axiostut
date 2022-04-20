@@ -17,7 +17,7 @@ const Quote = () => {
 
   return (
     <QuoteContainer>
-      {data && <Text>{data.quotes[0].text};</Text>}
+      {data && <Text>{data.quotes[0].text}</Text>}
       {data && <Text>{data.quotes[0].author}</Text>}
     </QuoteContainer>
   )
